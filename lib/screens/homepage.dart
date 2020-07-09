@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'configuracoes.dart';
+import 'AddServico.dart';
 import 'curriculos.dart';
 import 'servicos.dart';
 
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     _paginas.add(Servicos());
     _paginas.add(Curriculos());
-    _paginas.add(Configuracoes());
+    _paginas.add(AddServico());
     super.initState();
   }
 
@@ -44,9 +44,9 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: Icon(Icons.add_location),
             title: Text(
-              'Configurações',
+              'Add Serviço',
             ),
           ),
         ],

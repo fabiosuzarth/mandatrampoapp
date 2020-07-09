@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mandatrampo/screens/cadastro_servico.dart';
 
 class MenuCadastro extends StatelessWidget {
   @override
@@ -45,6 +46,8 @@ class MenuCadastro extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
             child: Text('CADASTRAR SERVIÇO/NEGÓCIO'),
             onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => CadastroServico()));
               // Navegação a ser adicionada
             },
           ),
